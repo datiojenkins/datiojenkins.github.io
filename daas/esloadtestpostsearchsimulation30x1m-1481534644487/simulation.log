@@ -1,0 +1,810 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.datio.daas.testPF:testPF:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin net.alchim31.maven:scala-maven-plugin @ line 62, column 21
+[WARNING] 'parent.relativePath' points at com.datio.daas:daas instead of com.stratio:parent, please verify your project structure @ line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building testPF 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ testPF ---
+[INFO] Deleting /home/david/workspace/daas/testPF/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/david/workspace/daas/testPF/src/main/resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:add-source (scala-compile-first) @ testPF ---
+[INFO] Add Source directory: /home/david/workspace/daas/testPF/src/main/scala
+[INFO] Add Test Source directory: /home/david/workspace/daas/testPF/src/test/scala
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ testPF ---
+[WARNING]  Expected all dependencies to require Scala version: 2.11.6
+[WARNING]  com.datio.daas.testPF:testPF:1.0-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:copy-resources (copy-resources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ testPF ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ testPF ---
+[WARNING]  Expected all dependencies to require Scala version: 2.11.6
+[WARNING]  com.datio.daas.testPF:testPF:1.0-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] /home/david/workspace/daas/testPF/src/test/scala:-1: info: compiling
+[INFO] Compiling 21 source files to /home/david/workspace/daas/testPF/target/test-classes at 1481534619063
+[INFO] prepare-compile in 0 s
+[INFO] compile in 7 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ testPF ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.7:test (default-test) @ testPF ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ testPF ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /home/david/workspace/daas/testPF/target/testPF-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- gatling-maven-plugin:2.1.7:execute (default) @ testPF ---
+Simulation com.datiobd.daas.testPF.simulations.EsLoadTestPostSearchSimulation30x1m started...
+[WARN] [12/12/2016 10:23:58.172] [Base-Simulation-akka.actor.default-dispatcher-10] [akka.actor.ActorSystemImpl(Base-Simulation)] Explicitly set HTTP header 'Content-Type: application/json' is ignored, illegal RawHeader
+[WARN] [12/12/2016 10:23:58.383] [Base-Simulation-akka.actor.default-dispatcher-9] [akka.actor.ActorSystemImpl(Base-Simulation)] Explicitly set HTTP header 'Content-Type: application/json' is ignored, illegal RawHeader
+[WARN] [12/12/2016 10:23:58.560] [Base-Simulation-akka.actor.default-dispatcher-10] [akka.actor.ActorSystemImpl(Base-Simulation)] Explicitly set HTTP header 'Content-Type: application/json' is ignored, illegal RawHeader
+
+================================================================================
+2016-12-12 10:24:04                                           0s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[                                                                          ]  0%
+          waiting: 30     / active: 0      / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=0      KO=0     )
+
+================================================================================
+
+10:24:08.679 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.679 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.711 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.712 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.724 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.724 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.725 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.729 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.730 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.736 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.745 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.747 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.753 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.757 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.767 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.775 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.783 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.783 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.788 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.796 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.807 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.816 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.816 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.826 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.830 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.834 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.839 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.867 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.872 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.872 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.873 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.877 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.913 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.914 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.922 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.922 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.922 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.926 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.926 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.935 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.942 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.942 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.955 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.956 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.959 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.959 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.968 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.974 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.981 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.986 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:08.999 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.030 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.036 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.036 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.040 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.040 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.049 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.075 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.075 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.079 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.083 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.090 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.127 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.128 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.133 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.133 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.134 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.139 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.139 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.139 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.148 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.162 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.176 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.185 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.192 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.198 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.206 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.245 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.246 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.248 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.258 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.259 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.276 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.276 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.286 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.286 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.303 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.343 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.343 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.344 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.354 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.354 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.355 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.368 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.383 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.393 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.401 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.405 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.411 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.442 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.447 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.449 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.458 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.467 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.472 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.472 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.496 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.500 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+
+================================================================================
+2016-12-12 10:24:09                                           5s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=356    KO=107   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=356    KO=107   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 404                       107 (100,0%)
+================================================================================
+
+10:24:09.525 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.549 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.549 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.557 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.566 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.570 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.571 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.588 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.652 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.722 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:09.726 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:10.129 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+
+================================================================================
+2016-12-12 10:24:14                                          10s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1058   KO=120   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=1058   KO=120   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 404                       120 (100,0%)
+================================================================================
+
+10:24:16.593 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.599 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.600 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.602 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.605 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.606 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.639 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.639 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.640 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.646 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.651 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.658 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.666 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.673 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.691 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.693 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.708 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.708 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.731 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.731 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.769 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.774 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.799 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.799 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.802 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.806 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.807 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.807 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.808 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.809 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.810 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.810 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.815 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.815 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.852 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.852 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.852 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.855 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.866 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.874 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.886 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.890 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.895 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.897 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.919 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.919 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.940 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.942 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.984 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:16.990 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.004 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.005 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.011 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.012 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.013 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.013 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.017 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.017 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.018 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.018 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.024 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.027 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.059 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.063 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.067 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.069 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.079 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.093 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.104 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.108 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.110 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.132 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.132 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.151 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.155 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.191 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.191 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.203 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.203 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.206 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.207 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.212 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.212 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.212 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.217 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.217 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.217 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.218 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.218 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.227 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.227 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.258 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.270 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.273 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.278 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.284 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.305 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.306 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.309 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.323 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-11][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.416 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.417 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.417 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.417 [GatlingSystem-akka.actor.default-dispatcher-10][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.417 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.418 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.418 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.418 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.418 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.418 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.418 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.423 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.432 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.432 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.453 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.471 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.476 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.481 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.483 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.496 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.504 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 404
+10:24:17.504 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.508 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.526 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.599 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.600 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.600 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.601 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.601 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.604 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.606 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.607 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.607 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.607 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.608 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.608 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.611 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.611 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.611 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.611 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.615 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.615 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.616 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.617 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.632 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.657 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.667 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.675 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.677 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.687 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.690 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.706 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.706 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.727 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.794 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.794 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.795 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.795 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.795 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.797 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.805 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.806 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.806 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.807 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.808 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.809 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.816 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.818 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.818 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.819 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.820 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.820 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.821 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.827 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.834 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.870 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.875 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.886 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.894 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.895 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.900 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.924 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.925 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.947 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.999 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:17.999 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.000 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.000 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.001 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.002 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.012 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.013 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.013 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.013 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.014 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.015 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.025 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.025 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.025 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.028 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.029 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.029 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.030 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.039 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.043 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.082 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.088 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.097 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.105 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.108 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.109 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.144 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.148 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.165 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.206 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.206 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.206 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.206 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.207 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.207 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.220 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.220 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.220 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.220 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.221 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.221 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.230 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.230 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.232 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.236 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.238 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.238 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.239 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.239 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.262 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.294 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.301 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.309 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.312 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.318 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.325 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.366 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.374 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.383 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.404 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.405 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.405 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.405 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.405 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.405 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.424 [GatlingSystem-akka.actor.default-dispatcher-14][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.424 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.424 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.424 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.425 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.425 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.433 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.433 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.435 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.436 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.437 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.440 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.441 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.441 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.467 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.486 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.498 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.504 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.506 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.507 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.524 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.573 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.579 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.585 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.590 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.590 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.590 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.590 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.590 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.590 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.611 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.611 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.612 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.612 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.612 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.612 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.614 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.615 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.617 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.624 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.624 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.630 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.631 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.632 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.672 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.676 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.689 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.689 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.691 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.694 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.723 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.779 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.782 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.782 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.782 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.784 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.784 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.785 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.790 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.796 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.811 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.812 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.812 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.812 [GatlingSystem-akka.actor.default-dispatcher-2][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.813 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.813 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.813 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.814 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.817 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.829 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.829 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.837 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.838 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.838 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.880 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.885 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.889 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.889 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.891 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.896 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.926 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.981 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.981 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.981 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.982 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.982 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.982 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:18.991 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.007 [GatlingSystem-akka.actor.default-dispatcher-5][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.007 [GatlingSystem-akka.actor.default-dispatcher-4][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.008 [GatlingSystem-akka.actor.default-dispatcher-6][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.009 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.009 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.010 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.010 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.011 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.011 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.012 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.022 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.036 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.036 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.043 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.044 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.045 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.082 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.088 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.089 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.096 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.096 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.104 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.133 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.178 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.178 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.181 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.181 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.182 [GatlingSystem-akka.actor.default-dispatcher-13][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.182 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.207 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.207 [GatlingSystem-akka.actor.default-dispatcher-8][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.210 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.211 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.212 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.212 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.213 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.213 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.214 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.220 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.220 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.222 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.252 [GatlingSystem-akka.actor.default-dispatcher-16][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.256 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.259 [GatlingSystem-akka.actor.default-dispatcher-12][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+10:24:19.260 [GatlingSystem-akka.actor.default-dispatcher-3][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+
+================================================================================
+2016-12-12 10:24:19                                          15s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1356   KO=509   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=1356   KO=509   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       288 (56,58%)
+> status.find.is(200), but actually found 404                       221 (43,42%)
+================================================================================
+
+10:24:19.634 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestPostSearchSimulation30x1m' failed: status.find.is(200), but actually found 502
+
+================================================================================
+2016-12-12 10:24:24                                          20s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1913   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=1913   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:29                                          25s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=2583   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=2583   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:34                                          30s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=3381   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=3381   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:39                                          35s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=4091   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=4091   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:44                                          40s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=5118   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=5118   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:49                                          45s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=6086   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=6086   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:54                                          50s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=6872   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=6872   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:24:59                                          55s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=7633   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=7633   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:25:04                                          60s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 30     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=8735   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=8735   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+
+================================================================================
+2016-12-12 10:25:07                                          62s elapsed
+---- EsLoadTestPostSearchSimulation30x1m ---------------------------------------
+[##########################################################################]100%
+          waiting: 0      / active: 0      / done:30    
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=9065   KO=510   )
+> EsLoadTestPostSearchSimulation30x1m                      (OK=9065   KO=510   )
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+Simulation finished
+Stored in influxdb the monitoring part ElasticSearch - Before call
+Stored in influxdb the monitoring part ElasticSearch - Call
+Stored in influxdb the monitoring part ElasticSearch - After call
+Monitoring is stored in influxdb
+Opening http://localhost:3000/dashboard/db/daas-hetzner-hdw?from=1481534643734&to=1481534709947
+Opening http://localhost:3000/dashboard/db/daas-hetzner-monitoring
+Parsing log file(s)...
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                       9575 (OK=9065   KO=510   )
+> min response time                                     85 (OK=85     KO=175   )
+> max response time                                   1713 (OK=1713   KO=995   )
+> mean response time                                   187 (OK=186    KO=212   )
+> std deviation                                         76 (OK=77     KO=69    )
+> response time 50th percentile                        192 (OK=190    KO=203   )
+> response time 75th percentile                        211 (OK=211    KO=209   )
+> mean requests/sec                                152.066 (OK=143.967 KO=8.1   )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          9032 ( 94%)
+> 800 ms < t < 1200 ms                                  30 (  0%)
+> t > 1200 ms                                            3 (  0%)
+> failed                                               510 (  5%)
+---- Errors --------------------------------------------------------------------
+> status.find.is(200), but actually found 502                       289 (56,67%)
+> status.find.is(200), but actually found 404                       221 (43,33%)
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /home/david/workspace/daas/testPF/target/gatling/results/esloadtestpostsearchsimulation30x1m-1481534644487/index.html
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:57 min
+[INFO] Finished at: 2016-12-12T10:25:33+01:00
+[INFO] Final Memory: 18M/315M
+[INFO] ------------------------------------------------------------------------
