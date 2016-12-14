@@ -1,0 +1,50 @@
+#searchComponentInput {
+    background-position: 10px 12px; /* Position the search icon */
+    width: 160px;
+    font-size: 16px; /* Increase font-size */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+#searchTypeInput {
+    background-position: 10px 12px; /* Position the search icon */
+    width: 120px;
+    font-size: 16px; /* Increase font-size */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+#searchNameInput {
+    background-position: 10px 12px; /* Position the search icon */
+    width: 550px;
+    font-size: 16px; /* Increase font-size */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+#searchDateInput {
+    background-position: 10px 12px; /* Position the search icon */
+    width: 200px;
+    font-size: 16px; /* Increase font-size */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#tableTest {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#tableTest th, #tableTest td {
+    text-align: left; /* Left-align text */
+    padding: 8px; /* Add padding */
+}
+
+#tableTest tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#tableTest tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
