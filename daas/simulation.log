@@ -1,0 +1,80 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.datio.daas.testPF:testPF:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin net.alchim31.maven:scala-maven-plugin @ line 62, column 21
+[WARNING] 'parent.relativePath' points at com.datio.daas:daas instead of com.stratio:parent, please verify your project structure @ line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building testPF 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ testPF ---
+[INFO] Deleting /home/david/workspace/daas/testPF/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/david/workspace/daas/testPF/src/main/resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:add-source (scala-compile-first) @ testPF ---
+[INFO] Add Source directory: /home/david/workspace/daas/testPF/src/main/scala
+[INFO] Add Test Source directory: /home/david/workspace/daas/testPF/src/test/scala
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ testPF ---
+[WARNING]  Expected all dependencies to require Scala version: 2.11.6
+[WARNING]  com.datio.daas.testPF:testPF:1.0-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:copy-resources (copy-resources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ testPF ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ testPF ---
+[WARNING]  Expected all dependencies to require Scala version: 2.11.6
+[WARNING]  com.datio.daas.testPF:testPF:1.0-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] /home/david/workspace/daas/testPF/src/test/scala:-1: info: compiling
+[INFO] Compiling 21 source files to /home/david/workspace/daas/testPF/target/test-classes at 1481744368453
+[INFO] prepare-compile in 0 s
+[INFO] compile in 7 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ testPF ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.7:test (default-test) @ testPF ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ testPF ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /home/david/workspace/daas/testPF/target/testPF-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- gatling-maven-plugin:2.1.7:execute (default) @ testPF ---
+Simulation com.datiobd.daas.testPF.simulations.EsLoadTestPostSearchSimulation30x1m started...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.212 s
+[INFO] Finished at: 2016-12-14T20:40:03+01:00
+[INFO] Final Memory: 18M/311M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal io.gatling:gatling-maven-plugin:2.1.7:execute (default) on project testPF: Gatling failed. Process exited with an error: 255 (Exit value: 255) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
