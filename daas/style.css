@@ -1,31 +1,9 @@
-#searchComponentInput {
+.searchInput {
     background-position: 10px 12px; /* Position the search icon */
-    width: 160px;
+    width: 100%;
     font-size: 16px; /* Increase font-size */
     border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
-#searchTypeInput {
-    background-position: 10px 12px; /* Position the search icon */
-    width: 120px;
-    font-size: 16px; /* Increase font-size */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
-#searchNameInput {
-    background-position: 10px 12px; /* Position the search icon */
-    width: 550px;
-    font-size: 16px; /* Increase font-size */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
-#searchDateInput {
-    background-position: 10px 12px; /* Position the search icon */
-    width: 200px;
-    font-size: 16px; /* Increase font-size */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
+  }
 
 #tableTest {
     border-collapse: collapse; /* Collapse borders */
