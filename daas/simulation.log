@@ -16,7 +16,7 @@
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ testPF ---
 [INFO] Deleting /home/david/workspace/daas/testPF/target
 [INFO] 
-[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ testPF ---
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ testPF ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /home/david/workspace/daas/testPF/src/main/resources
 [INFO] 
@@ -31,14 +31,10 @@
 [WARNING] Multiple versions of scala libraries detected!
 [INFO] No sources to compile
 [INFO] 
-[INFO] --- maven-resources-plugin:3.0.1:copy-resources (copy-resources) @ testPF ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
-[INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ testPF ---
 [INFO] No sources to compile
 [INFO] 
-[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ testPF ---
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ testPF ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 3 resources
 [INFO] 
@@ -48,9 +44,9 @@
 [WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
 [WARNING] Multiple versions of scala libraries detected!
 [INFO] /home/david/workspace/daas/testPF/src/test/scala:-1: info: compiling
-[INFO] Compiling 21 source files to /home/david/workspace/daas/testPF/target/test-classes at 1481744368453
+[INFO] Compiling 21 source files to /home/david/workspace/daas/testPF/target/test-classes at 1481796273178
 [INFO] prepare-compile in 0 s
-[INFO] compile in 7 s
+[INFO] compile in 8 s
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ testPF ---
 [INFO] Nothing to compile - all classes are up to date
@@ -67,9 +63,9 @@ Simulation com.datiobd.daas.testPF.simulations.EsLoadTestPostSearchSimulation30x
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 38.212 s
-[INFO] Finished at: 2016-12-14T20:40:03+01:00
-[INFO] Final Memory: 18M/311M
+[INFO] Total time: 22.320 s
+[INFO] Finished at: 2016-12-15T11:04:52+01:00
+[INFO] Final Memory: 20M/339M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal io.gatling:gatling-maven-plugin:2.1.7:execute (default) on project testPF: Gatling failed. Process exited with an error: 255 (Exit value: 255) -> [Help 1]
 [ERROR] 
