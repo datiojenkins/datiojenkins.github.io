@@ -1,0 +1,1003 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.datio.daas.testPF:testPF:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin net.alchim31.maven:scala-maven-plugin @ line 62, column 21
+[WARNING] 'parent.relativePath' points at com.datio.daas:daas instead of com.stratio:parent, please verify your project structure @ line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building testPF 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ testPF ---
+[INFO] Deleting /home/david/workspace/daas/testPF/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/david/workspace/daas/testPF/src/main/resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:add-source (scala-compile-first) @ testPF ---
+[INFO] Add Source directory: /home/david/workspace/daas/testPF/src/main/scala
+[INFO] Add Test Source directory: /home/david/workspace/daas/testPF/src/test/scala
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ testPF ---
+[WARNING]  Expected all dependencies to require Scala version: 2.11.6
+[WARNING]  com.datio.daas.testPF:testPF:1.0-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:copy-resources (copy-resources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ testPF ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ testPF ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ testPF ---
+[WARNING]  Expected all dependencies to require Scala version: 2.11.6
+[WARNING]  com.datio.daas.testPF:testPF:1.0-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  io.gatling.highcharts:gatling-charts-highcharts:2.1.7 requires scala version: 2.11.7
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] /home/david/workspace/daas/testPF/src/test/scala:-1: info: compiling
+[INFO] Compiling 21 source files to /home/david/workspace/daas/testPF/target/test-classes at 1482415995072
+[INFO] prepare-compile in 0 s
+[INFO] compile in 6 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ testPF ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.7:test (default-test) @ testPF ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ testPF ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /home/david/workspace/daas/testPF/target/testPF-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- gatling-maven-plugin:2.1.7:execute (default) @ testPF ---
+Simulation com.datiobd.daas.testPF.simulations.EsLoadTestGetDocumentSimulation300x30m started...
+
+================================================================================
+2016-12-22 15:13:31                                           0s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[                                                                          ]  0%
+          waiting: 300    / active: 0      / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=0      KO=0     )
+
+================================================================================
+
+
+================================================================================
+2016-12-22 15:13:36                                           5s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[-------------                                                             ]  0%
+          waiting: 250    / active: 50     / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=389    KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=389    KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:13:41                                          10s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[-------------------------                                                 ]  0%
+          waiting: 200    / active: 100    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=840    KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=840    KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:13:46                                          15s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[-------------------------------------                                     ]  0%
+          waiting: 150    / active: 150    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1270   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=1270   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:13:51                                          20s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------                        ]  0%
+          waiting: 100    / active: 200    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1712   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=1712   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:13:56                                          25s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------            ]  0%
+          waiting: 50     / active: 250    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=2132   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=2132   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:01                                          30s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=2560   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=2560   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:06                                          35s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=3024   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=3024   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:11                                          40s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=3481   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=3481   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:16                                          45s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=3947   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=3947   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:21                                          50s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=4419   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=4419   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:26                                          55s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=4887   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=4887   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:31                                          60s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=5361   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=5361   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:36                                          65s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=5821   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=5821   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:41                                          70s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=6290   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=6290   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:46                                          75s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=6771   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=6771   KO=0     )
+================================================================================
+
+
+================================================================================
+2016-12-22 15:14:51                                          80s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=7234   KO=0     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=7234   KO=0     )
+================================================================================
+
+15:14:53.914 [GatlingSystem-akka.actor.default-dispatcher-7][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestGetDocumentSimulation300x30m' failed: java.util.concurrent.TimeoutException: Request timed out to /10.142.240.227:80 of 60000 ms
+
+================================================================================
+2016-12-22 15:14:56                                          85s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=7717   KO=1     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=7717   KO=1     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      1 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:01                                          90s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=8178   KO=1     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=8178   KO=1     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      1 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:06                                          95s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=8651   KO=1     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=8651   KO=1     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      1 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:11                                         100s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=9104   KO=1     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=9104   KO=1     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      1 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:16                                         105s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=9578   KO=1     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=9578   KO=1     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      1 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+15:15:19.912 [GatlingSystem-akka.actor.default-dispatcher-9][WARN ][AsyncHandlerActor.scala:119] i.g.h.a.AsyncHandlerActor - Request 'EsLoadTestGetDocumentSimulation300x30m' failed: java.util.concurrent.TimeoutException: Request timed out to /10.142.240.227:80 of 60000 ms
+
+================================================================================
+2016-12-22 15:15:21                                         110s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=10031  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=10031  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:26                                         115s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=10494  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=10494  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:31                                         120s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=10959  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=10959  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:36                                         125s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=11435  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=11435  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:41                                         130s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=11898  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=11898  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:46                                         135s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=12368  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=12368  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:51                                         140s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=12846  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=12846  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:15:56                                         145s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=13312  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=13312  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:01                                         150s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=13789  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=13789  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:06                                         155s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=14254  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=14254  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:11                                         160s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=14729  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=14729  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:16                                         165s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=15190  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=15190  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:21                                         170s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=15665  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=15665  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:26                                         175s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=16123  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=16123  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:31                                         180s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=16594  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=16594  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:36                                         185s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=17044  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=17044  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:41                                         190s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=17513  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=17513  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:46                                         195s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=17971  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=17971  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:51                                         200s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=18429  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=18429  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:16:56                                         205s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=18903  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=18903  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:01                                         210s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=19373  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=19373  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:06                                         215s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=19822  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=19822  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:11                                         220s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=20289  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=20289  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:16                                         225s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=20760  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=20760  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:21                                         230s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=21222  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=21222  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:26                                         235s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=21675  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=21675  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:31                                         240s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=22150  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=22150  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:36                                         245s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=22602  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=22602  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:41                                         250s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=23069  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=23069  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:46                                         255s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=23526  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=23526  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:51                                         260s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=23996  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=23996  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:17:56                                         265s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=24461  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=24461  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:01                                         270s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=24922  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=24922  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:06                                         275s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=25377  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=25377  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:11                                         280s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=25855  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=25855  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:16                                         285s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=26314  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=26314  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:21                                         290s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=26781  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=26781  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:26                                         295s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=27261  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=27261  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:31                                         300s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[--------------------------------------------------------------------------]  0%
+          waiting: 0      / active: 300    / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=27723  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=27723  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:36                                         305s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[########------------------------------------------------------------------] 11%
+          waiting: 0      / active: 266    / done:34    
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=28193  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=28193  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:41                                         310s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[####################------------------------------------------------------] 28%
+          waiting: 0      / active: 215    / done:85    
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=28673  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=28673  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:46                                         315s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[#################################-----------------------------------------] 45%
+          waiting: 0      / active: 164    / done:136   
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=29126  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=29126  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:51                                         320s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[###############################################---------------------------] 64%
+          waiting: 0      / active: 106    / done:194   
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=29600  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=29600  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:18:56                                         325s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[############################################################--------------] 82%
+          waiting: 0      / active: 53     / done:247   
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=30037  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=30037  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:19:01                                         330s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[#########################################################################-] 99%
+          waiting: 0      / active: 2      / done:298   
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=30366  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=30366  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+
+================================================================================
+2016-12-22 15:19:01                                         330s elapsed
+---- EsLoadTestGetDocumentSimulation300x30m ------------------------------------
+[##########################################################################]100%
+          waiting: 0      / active: 0      / done:300   
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=30368  KO=2     )
+> EsLoadTestGetDocumentSimulation300x30m                   (OK=30368  KO=2     )
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+Simulation finished
+Parsing log file(s)...
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                      30370 (OK=30368  KO=2     )
+> min response time                                     63 (OK=63     KO=60002 )
+> max response time                                  60004 (OK=53950  KO=60004 )
+> mean response time                                  2972 (OK=2969   KO=60003 )
+> std deviation                                       1866 (OK=1808   KO=1     )
+> response time 50th percentile                       2735 (OK=2735   KO=60003 )
+> response time 75th percentile                       3682 (OK=3682   KO=60003 )
+> mean requests/sec                                  91.91 (OK=91.904 KO=0.006 )
+---- Response Time Distribution ------------------------------------------------
+> t < 200 ms                                           185 (  1%)
+> 200 ms < t < 800 ms                                 1502 (  5%)
+> t > 800 ms                                         28681 ( 94%)
+> failed                                                 2 (  0%)
+---- Errors --------------------------------------------------------------------
+> java.util.concurrent.TimeoutException: Request timed out to /1      2 (100,0%)
+0.142.240.227:80 of 60000 ms
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /home/david/workspace/daas/testPF/target/gatling/results/esloadtestgetdocumentsimulation300x30m-1482416011329/index.html
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:49 min
+[INFO] Finished at: 2016-12-22T15:19:02+01:00
+[INFO] Final Memory: 20M/342M
+[INFO] ------------------------------------------------------------------------
