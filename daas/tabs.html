@@ -43,6 +43,9 @@ function show(view){
   if (view == "sfw"){
     document.getElementById("content").innerHTML='<object type="text/html" data="grafanaMonitoring.png" width="100%" height="93%"></object>';
   }
+  if (view == "gatling"){
+    document.getElementById("content").innerHTML='<object type="text/html" data="grafanaGatling.png" width="100%" height="93%"></object>';
+  }
   if (view == "logs"){
     document.getElementById("content").innerHTML='<object type="text/html" data="simulation.tar.gz" width="100%" height="93%"></object>';
   }
@@ -54,6 +57,7 @@ function show(view){
   <li><a href="javascript:void(0)" class="tablinks" onclick="show('request')">Requests</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="show('hdw')">Hardware monitoring</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="show('sfw')">Software monitoring</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="show('gatling')">More requests</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="show('logs')">Logs</a></li>
 </ul>
 
